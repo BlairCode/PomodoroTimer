@@ -1,37 +1,47 @@
-# 番茄钟 Pomodoro Timer
+# 🍅 Pomodoro Timer  番茄计时器
 
-一款帮助提升生产力的工具，通过25分钟工作和5分钟休息的循环助力专注。
+## 简介 / Overview  
+A minimalist Pomodoro Timer built with Python & Tkinter to boost focus. Features a fixed window, time logging, and a clickable copy icon.  
+简洁的番茄计时器，使用 Python 和 Tkinter 打造，提升专注力。支持固定窗口、时间记录和可点击复制图标。
 
-A simple tool to boost productivity with 25-minute work sessions and 5-minute breaks.
+## 特性 / Features  
+- ⏰ **Pomodoro**: 25min work, 5min break (customizable)  
+  **番茄工作法**：25分钟工作，5分钟休息（可调）  
+- 🖼️ **Fixed UI**: 400x400, draggable, non-resizable  
+  **固定界面**：400x400，可拖动，不可缩放  
+- 📝 **Time Log**: Record timer values, scrollable  
+  **时间记录**：记录计时，滚动查看  
+- 📋 **Copy Icon**: One-click copy of all records  
+  **复制图标**：一键复制所有记录  
 
-## 功能 Features
-- 番茄主题界面（红色与桃色搭配）。  
-  Tomato-themed UI (red and peach colors).
-- 自定义标题栏，支持拖动、最小化、关闭。  
-  Custom titlebar to drag, minimize, or close.
-- 可调整窗口大小，进度条自适应。  
-  Resizable window with adaptive progress bar.
-- 工作/休息切换时弹出置顶提醒。  
-  Topmost alerts for work/break switches.
-- 自定义番茄图标。  
-  Custom tomato icon.
+## 安装 / Installation  
+1. Clone or download:  
+   克隆或下载：  
+   ```bash
+   git clone https://github.com/BlairCode/PomodoroTimer.git
+   ```
+2. Install dependencies:  
+   安装依赖：  
+   ```bash
+   pip install Pillow pyperclip
+   ```
+3. Add `copy.png` (32x32) to the project folder.  
+   将 `copy.png`（32x32）放入项目文件夹。
 
-## 安装 Installation
-1. 从 [发布页面](https://github.com/your-username/pomodoro-timer/releases) 下载 `pomodoro_timer.exe`。  
-   Download `pomodoro_timer.exe` from [Releases](https://github.com/your-username/pomodoro-timer/releases).
-2. 双击运行（支持 Windows 10/11）。  
-   Double-click to run (Windows 10/11).
+## 使用 / Usage  
+Run `python pomodoro_timer.py` and:  
+运行 `python pomodoro_timer.py`，然后：  
+- **Start/Pause**: Toggle timer with "Start".  
+  **开始/暂停**：点击“Start”切换计时。  
+- **Record**: Save time with "Record".  
+  **记录**：点击“Record”保存时间。  
+- **Copy**: Click the top-right icon to copy logs.  
+  **复制**：点击右上图标复制记录。  
+- **Reset**: Restart with "Reset".  
+  **重置**：点击“Reset”重启。
 
-## 使用 Usage
-- 点击“开始”进入25分钟工作时段。  
-  Click "Start" for a 25-minute work session.
-- 点击“–”最小化，“×”关闭。  
-  Click "–" to minimize, "×" to close.
-- 拖动右下角调整窗口大小。  
-  Drag bottom-right corner to resize.
-- 提醒弹出时，点击“确定”进入下一时段。  
-  Click "OK" on alerts to start the next session.
-
-## 许可证 License
-MIT 许可证  
-MIT License
+## 依赖 / Dependencies  
+- Python 3.9+  
+- Tkinter  
+- Pillow  
+- pyperclip  
