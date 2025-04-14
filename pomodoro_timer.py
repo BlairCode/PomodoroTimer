@@ -3,6 +3,8 @@ import tkinter.ttk as ttk
 import time
 import pyperclip
 from PIL import Image, ImageTk
+import os
+import sys
 
 class PomodoroTimer:
     def __init__(self, root):
@@ -105,7 +107,12 @@ class PomodoroTimer:
         self.scrollbar.config(command=self.record_text.yview)
 
         try:
-            image = Image.open("copy.png")
+            if getattr(sys, 'frozen', False):
+                base_path = sys._MEIPASS
+            else:
+                base_path = os.path.dirname(__file__)
+            icon_path = os.path.join(base_path, "copy.png")
+            image = Image.open(icon_path)
             image = image.resize((32, 32), Image.LANCZOS)
             self.icon_image = ImageTk.PhotoImage(image)
             self.icon_label = tk.Label(self.record_frame, image=self.icon_image, bg="#FFDAB9", cursor="hand2")
