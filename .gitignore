@@ -1,0 +1,31 @@
+# 依赖文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# 打包产物
+build/
+dist/
+*.spec
+
+# IDE / 编辑器配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时 / 运行时文件
+*.log
+*.tmp
+
+svg2png.py
